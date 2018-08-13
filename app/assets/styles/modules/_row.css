@@ -1,0 +1,14 @@
+.row {
+    display: block;
+    @mixin clearfix;
+    
+    &__large-3 {
+        float: left;
+        width: 25%;
+    }
+    
+    &__large-9 {
+        float: left;
+        width: 75%;
+    }
+}

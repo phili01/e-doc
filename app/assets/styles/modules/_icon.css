@@ -1,0 +1,30 @@
+.icon {
+    &__rotate {
+    }
+    
+    &__site-header--search {
+        font-size: 1.25rem;
+        position: absolute;
+        color: #fff;
+        top: 25%;
+        transform: translateY(-25%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    &__site-header--clock {
+         font-size: 1.6rem;
+         margin: 0 20px 0 20px;
+         color: rgba($mainDarkBlack, .35);
+        position: relative;
+        cursor: pointer;
+    }
+    
+    &__site-header--mail {
+        font-size: 1.6rem;
+        margin:  0 20px 0 20px;
+        cursor: pointer;
+        color: rgba($mainDarkBlack, .35);
+    }
+    
+}
