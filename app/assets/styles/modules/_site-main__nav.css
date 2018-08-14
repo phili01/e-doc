@@ -1,0 +1,114 @@
+.site-main__nav {
+    background-color: #fff; 
+    position: absolute;
+    top: 0;
+    width: 300px;
+    left: 0;
+    bottom: 0;
+    padding-top: 97px; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 0px 4px 2px rgba($mainDarkGray, .9);
+    -o-box-shadow: 2px 0px 4px 2px rgba($mainDarkGray, .9);
+    -ms-box-shadow: 2px 0px 4px 2px rgba($mainDarkGray, .9);
+    -webkit-box-shadow: 2px 0px 4px 2px rgba($mainDarkGray, .9);
+    -moz-box-shadow: 2px 0px 4px 2px rgba($mainDarkGray, .9);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &--shade {
+/*
+            position: absolute;
+            width: 2px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(#fff, .15);
+            box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
+            -o-box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
+            -ms-box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
+            -webkit-box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
+            -moz-box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
+*/
+        }
+    
+    &--compose {
+        width: 200px;
+        text-align: center;
+        background-color: $mainLightGreen;
+        color: #fff;
+        font-size: 1.375rem;
+        box-shadow: 0px 11px 24px 0px rgba(89, 159, 47, 0.65);
+        -o-box-shadow: 0px 11px 24px 0px rgba(89, 159, 47, 0.65);
+        -ms-box-shadow: 0px 11px 24px 0px rgba(89, 159, 47, 0.65);
+        -webkit-box-shadow: 0px 11px 24px 0px rgba(89, 159, 47, 0.65);
+        -mz-box-shadow: 0px 11px 24px 0px rgba(89, 159, 47, 0.65);
+        margin: 30px auto 30px auto;
+        padding: 15px 0;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: 300;
+    }
+    
+    
+    &--items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 500;
+        color: rgba($mainDarkBlack, .6);  
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        overflow: hidden;
+        overflow-y: auto;
+        background-color: #fff;
+
+        &__shade {
+            box-shadow: 0px 0px 13px 0px rgba(57, 63, 66, 0.65);
+            -o-box-shadow: 0px 0px 13px 0px rgba(57, 63, 66, 0.65);
+            -ms-box-shadow: 0px 0px 13px 0px rgba(57, 63, 66, 0.65);
+            -webkit-box-shadow: 0px 0px 13px 0px rgba(57, 63, 66, 0.65);
+            -moz-box-shadow: 0px 0px 13px 0px rgba(57, 63, 66, 0.65);
+            height: 2px;
+            widows: 100%;
+            background-color: $mainLightGreen;
+        }
+        
+        li {
+            padding: 25px 0 25px 55px;  
+            cursor: pointer;
+            
+            & > ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-size: .9375rem;
+                background-color: rgba($mainDarkGray, .2);
+                text-align: center;
+                width: 130px;
+                color: $mainFontColor;
+                border-left: 2px solid $mainLightGreen;
+                display: none;
+                cursor: default !important;
+                
+                li {
+                    padding: 10px 0;
+                    margin: 20px 0 0 0;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+    }
+
+    &--ctadmin {
+        background-color: $mainLightGreen;
+        color: #ffff;
+        padding: 20px 0;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+}

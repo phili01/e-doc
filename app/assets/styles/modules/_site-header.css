@@ -1,11 +1,13 @@
 .site-header {
     display: block;
-    border-top: 1px dotted $mainLightGreen;
-    background-color: $bgHeader;
+    background-color: #fff;
     width: 100%;
+    position: fixed;
+    z-index: 2;
+    
     
     &__logo {
-        width: 300px;
+        max-width: 300px;
         position: absolute;
         top: 0;
         left: 0;
@@ -20,6 +22,10 @@
             right: 0;
             background-color: rgba(#fff, .15);
             box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
+            -o-box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
+            -ms-box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
+            -webkit-box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
+            -moz-box-shadow: 1px 0px 1px 2px rgba($mainDarkGray, .9);
         }
     }
     
@@ -28,16 +34,17 @@
         width: 100%;
         padding: 0 0 0 300px;
         display: block;
+        background-color: rgb(255, 255, 255);
         
         &--img {
             display: block;
         }
-        
+
         &--wrapper {
             width: 100%;
-            background-color: $bgHeader;
+            background-color: #fff;
             @mixin clearfix;
-            padding: 26px 10px 26px 28px;
+            padding: 26px 10px 26px 28px; 
         }
         
         &--form {
@@ -49,7 +56,7 @@
             float: left;
       
             &__input {
-                padding: 14px 52px 14px 6px;
+                padding: 14px 52px 14px 10px;
                 width: 100%;
                 margin: 0;
                 border: none;
@@ -57,7 +64,7 @@
                 border-radius: 0px;
                 border-radius: 0px;
                 background-color: rgb(255, 255, 255);
-                box-shadow: 0px 0px 2.85px 1.15px rgba($mainDarkBlack, 0.25);
+                box-shadow: 0px 0px 1.85px 1.15px rgba($mainDarkBlack, 0.25);
             }
             
             &__submit {
@@ -80,7 +87,7 @@
             top: 0;
             bottom: 0;
             margin: 0 40px;
-            background-color: rgba($mainDarkGray, .35);
+            background-color: rgba($mainDarkGray, .15);
             padding: 0;
             list-style: none;
             @mixin clearfix;
@@ -118,8 +125,47 @@
                 top: 0px;
                 padding: 2px;
                 
+                
                 &--name {
                     position: relative;
+                    width: 80px;
+                    
+                    & > h4 {
+                        white-space: nowrap;
+                        word-wrap: break-word;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        font-weight: 400;
+                        color: $mainLightGreen;
+                        cursor: pointer;
+                    }
+                    
+                    &__settings {
+                        position: absolute;
+                        list-style: none;
+                        padding: 0;
+                        margin: ;
+                        background-color: #fff;
+                        font-size: .875rem;
+                        top: 10px;
+                        left: 0;
+                        right: 0;
+                        box-shadow: 0 1px 9px rgba($mainDarkGreen, .9);
+                        
+                        li {
+                            padding: 10px 0;
+                            text-align: center;
+                            cursor: pointer;
+                            
+                            &:first-child {
+                                border-bottom: 1px solid rgba($mainDarkGreen, .45)
+                            }
+                            
+                            &:hover {
+                                background-color: $mainLightGray;
+                            }
+                        }
+                    }
                 }
                
                 &--img {
@@ -127,7 +173,7 @@
                     height: 50px;
                     width: 50px;
                     border-radius: 25px;
-                    background-color: $mainLightBlue;
+                    background-color: $mainLightGray;
                     top: 50%;
                     transform: translateY(-50%);
                     right: -40px;

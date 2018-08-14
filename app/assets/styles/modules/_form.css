@@ -1,0 +1,39 @@
+.form {
+     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+     overflow: hidden;
+     overflow-y: auto;
+    
+    &__group {
+       margin: 15px 0;
+        font-size: .9375rem;
+        position: relative;
+    }
+    
+    &__desc {
+/*        margin-right: 10px;*/
+        color: rgba($mainDarkBlack, .65);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+
+    }
+    
+    &__text {
+        border: none;
+        outline: none;
+        background-color: $bgHeader;
+        border-bottom: 1px solid $mainDarkGray;
+        width: 100%; 
+        padding: 10px 20px;
+/*        box-shadow: 1px 1px 5px 1px $mainDarkGray;*/
+    }
+    
+    &__textarea {
+        width: 100%;
+        resize: vertical;
+        border: 1px solid $mainDarkGray;
+    }
+}

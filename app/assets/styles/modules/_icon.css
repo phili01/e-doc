@@ -15,7 +15,7 @@
     &__site-header--clock {
          font-size: 1.6rem;
          margin: 0 20px 0 20px;
-         color: rgba($mainDarkBlack, .35);
+         color: rgba($mainDarkBlack, .5);
         position: relative;
         cursor: pointer;
     }
@@ -24,7 +24,52 @@
         font-size: 1.6rem;
         margin:  0 20px 0 20px;
         cursor: pointer;
-        color: rgba($mainDarkBlack, .35);
+        color: rgba($mainDarkBlack, .5);
+    }
+    
+    
+    &__site-header--arrow {
+        position: absolute;
+        right: 0;
+    }
+    
+    &__site-main--pen {
+        margin-right: 10px;
+    }
+    
+    &__site-main--item {
+        margin-right: 25px;
+    }
+    
+    &__site-main--item__angle {
+        margin-left: 10px;
+    }
+    
+    &__site-main--chat {
+        margin-right: 20px;
+    }
+    
+    &__site-main--plane {
+        margin-right: 10px;
+    }
+    
+    &__site-main--plane__rec {
+        transform: rotate(-180deg);
+    }
+    
+    &__site-header--acc__user {
+        margin: 0 5px;
+        color: rgba($mainDarkBlack, .45);
+    }
+    
+    &__site-header--acc__sets {
+        margin: 0 8px;
+        color: rgba($mainDarkBlack, .54);
+    }
+    
+    &__site-main--content__pen {
+        margin-right: 5px;
+        color: $mainLightGreen;
     }
     
 }

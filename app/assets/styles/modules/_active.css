@@ -1,0 +1,29 @@
+.active {
+    
+    &__nav {
+       background-color: rgb(255, 255, 255);
+       box-shadow: 0px 2px 13px 0px rgba($mainDarkGreen, 0.58);
+/*        box-shadow: inset 2px 0px 0px 0px rgba($mainLightGreen, 0.98);*/
+        color: $mainLightGreen !important;
+         
+        & > span {
+/*            background-color: $mainLightGreen;*/
+            padding: 5px 20px 5px 0px;
+            text-align: center; 
+            position: relative;
+            color: $mainLightGreen;
+            margin: 0 20px 0 0;
+            
+            & > svg {
+                position: absolute;
+/*                top: 50%;*/
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        
+        & > svg {
+            color: $mainLightGreen;
+        }
+    }
+}
