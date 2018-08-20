@@ -1,39 +1,52 @@
 .form {
-     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-     overflow: hidden;
-     overflow-y: auto;
+     display: block;
+     margin-top: 1.875rem;
     
     &__group {
-       margin: 15px 0;
+        margin: 3.125rem 0;
         font-size: .9375rem;
         position: relative;
     }
     
+     &__opt {
+        padding: .5px 0;
+         background-color: $mainLightGreen;
+         margin-bottom: 20px;
+         box-shadow: 0px 0px 4px 0px rgba($mainLightGreen, 0.25);
+         -o-box-shadow: 0px 0px 4px 0px rgba($mainLightGreen, 0.25);
+         -webkit-box-shadow: 0px 0px 4px 0px rgba($mainLightGreen, 0.25);
+         -moz-box-shadow: 0px 0px 4px 0px rgba($mainLightGreen, 0.25);
+         -ms-box-shadow: 0px 0px 4px 0px rgba($mainLightGreen, 0.25);
+    }
+    
     &__desc {
-/*        margin-right: 10px;*/
-        color: rgba($mainDarkBlack, .65);
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 10px;
-
+        color: rgba($mainDarkBlack, .55);
     }
     
     &__text {
         border: none;
         outline: none;
-        background-color: $bgHeader;
+/*        background-color: $bgHeader;*/
         border-bottom: 1px solid $mainDarkGray;
         width: 100%; 
-        padding: 10px 20px;
-/*        box-shadow: 1px 1px 5px 1px $mainDarkGray;*/
+        padding: 10px 0px;
+    }
+    
+    &__select {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: .625rem 0px;
+        font-size: .875rem;
+        border-bottom: 1px solid $mainDarkGray;
+        color: $mainFontColor;
     }
     
     &__textarea {
         width: 100%;
         resize: vertical;
         border: 1px solid $mainDarkGray;
+        margin: 30px 0 0 0;
     }
+    
 }

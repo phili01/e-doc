@@ -378,8 +378,16 @@ img {
         position: relative;
         overflow: visible;
         display: flex;
-        flex-grow: 1;
+        flex-grow: 1; 
     }
+
+.wrapper__main--footer {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background-color: #599f2f;
+        }
 
 .row {
     display: block;
@@ -639,6 +647,7 @@ img {
         left: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
+        
     }
 
 .icon__site-header--clock {
@@ -697,8 +706,12 @@ img {
     }
 
 .icon__site-main--content__pen {
-        margin-right: 5px;
+        margin-right: 10px;
         color: #599f2f;
+    }
+
+.icon__site-main--form__icon {
+        margin-right: 20px;
     }
 
 .site-main {
@@ -821,12 +834,14 @@ img {
     }
 
 .site-main__content {
-    background-color: #f3f4f4;
+/*    background-color: $bgHeader;*/
     width: 100%;
     padding-left: 300px; 
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
     
 }
 
@@ -836,51 +851,116 @@ img {
         color: #333;
         padding-bottom: 20px;
         border-bottom: 1px solid #599f2f;
+        font-weight: 300;
     }
 
 .page-section {
     padding: 10px 50px 10px 50px; 
-    display: flex;
-    flex-direction: column;
 }
 
 .form {
-     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-     overflow: hidden;
-     overflow-y: auto;
+     display: block;
+     margin-top: 1.875rem;
+    
 }
 
 .form__group {
-       margin: 15px 0;
+        margin: 3.125rem 0;
         font-size: .9375rem;
         position: relative;
     }
 
-.form__desc {
-/*        margin-right: 10px;*/
-        color: rgba(0,0,0, .65);
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-        left: 10px;
+.form__opt {
+        padding: .5px 0;
+         background-color: #599f2f;
+         margin-bottom: 20px;
+         box-shadow: 0px 0px 4px 0px rgba(89,159,47, 0.25);
+         -o-box-shadow: 0px 0px 4px 0px rgba(89,159,47, 0.25);
+         -webkit-box-shadow: 0px 0px 4px 0px rgba(89,159,47, 0.25);
+         -moz-box-shadow: 0px 0px 4px 0px rgba(89,159,47, 0.25);
+         -ms-box-shadow: 0px 0px 4px 0px rgba(89,159,47, 0.25);
+    }
 
+.form__desc {
+        color: rgba(0,0,0, .55);
     }
 
 .form__text {
         border: none;
         outline: none;
-        background-color: #f3f4f4;
+/*        background-color: $bgHeader;*/
         border-bottom: 1px solid #d2d2d2;
         width: 100%; 
-        padding: 10px 20px;
-/*        box-shadow: 1px 1px 5px 1px $mainDarkGray;*/
+        padding: 10px 0px;
+    }
+
+.form__select {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: .625rem 0px;
+        font-size: .875rem;
+        border-bottom: 1px solid #d2d2d2;
+        color: #333;
     }
 
 .form__textarea {
         width: 100%;
         resize: vertical;
         border: 1px solid #d2d2d2;
+        margin: 30px 0 0 0;
     }
+
+.btn {
+    position: relative;
+}
+
+.btn__md {
+        width: 200px;
+        padding: 20px 0;
+        border: 1px solid #d2d2d2;
+        
+    }
+
+.btn__md--left {
+            position: absolute;
+            left: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+.btn__md--right {
+            position: absolute;
+            right: 20px; 
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+.btn__mr--bt {
+          margin-bottom: 20px;
+    }
+
+.btn__green {
+        background-color: #599f2f;
+        color: #fff;
+        box-shadow: 0px 11px 24px 0px rgba(0,0,0, 0.25); 
+        -o-box-shadow: 0px 11px 24px 0px rgba(0,0,0, 0.25); 
+        -ms-box-shadow: 0px 11px 24px 0px rgba(0,0,0, 0.25); 
+        -webkit-box-shadow: 0px 11px 24px 0px rgba(0,0,0, 0.25); 
+        -moz-box-shadow: 0px 11px 24px 0px rgba(0,0,0, 0.25);
+    }
+
+.btn__green:hover {
+           background-color: #3b6022; 
+            box-shadow: none;
+            transition: all .3s ease-in;
+        }
+
+.btn__gray {
+         background-color: #e1e1e1;
+        color: #333;
+    }
+
+.btn__gray:hover {
+            background-color: #d2d2d2;
+        }

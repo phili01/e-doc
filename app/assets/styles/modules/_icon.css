@@ -10,6 +10,7 @@
         transform: translateY(-25%);
         left: 50%;
         transform: translateX(-50%);
+        
     }
     
     &__site-header--clock {
@@ -68,8 +69,12 @@
     }
     
     &__site-main--content__pen {
-        margin-right: 5px;
+        margin-right: 10px;
         color: $mainLightGreen;
+    }
+    
+    &__site-main--form__icon {
+        margin-right: 20px;
     }
     
 }

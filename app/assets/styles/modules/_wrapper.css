@@ -21,5 +21,13 @@
         overflow: visible;
         display: flex;
         flex-grow: 1;
+        
+            &--footer {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background-color: $mainLightGreen;
+        } 
     }    
 }
