@@ -1,0 +1,375 @@
+.site-main__mymemo {
+    position: relative;
+    
+    &--filter {
+        margin-top: 140px;
+        position: relative;
+        width: 100%;
+        
+        &__close {
+            position: absolute; 
+            top: -34px; 
+            right: 25%; 
+            font-size: .9375rem;
+            background-color: rgba($mainDarkBlack, .3); 
+            padding: 5.5px 10px; 
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px rgba($mainDarkBlack, .4);
+            -o-box-shadow: 0 2px rgba($mainDarkBlack, .4);
+            -ms-box-shadow: 0 2px rgba($mainDarkBlack, .4);
+            -webkit-box-shadow: 0 2px rgba($mainDarkBlack, .4);
+            -moz-box-shadow: 0 2px rgba($mainDarkBlack, .4);
+            cursor: pointer;
+        }
+        
+        &__title {
+            font-size: .9375rem;
+            position: absolute;
+            top: -34px; 
+            left: 30%;
+            transform: translateX(-30%);
+            background-color: rgba($bgHeader, .4);    
+            padding: 5.5px 10px 5.5px 30px; 
+            border-radius: 5px; 
+            cursor: pointer;
+            box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3); 
+            -o-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3); 
+            -ms-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3); 
+            -webkit-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3); 
+            -moz-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3); 
+            
+            &--icon {
+                background-color: $mainLightGreen;
+                margin: 0 10px 0 0;
+                padding: 5px;
+                border-radius: 5px;
+                position: absolute;
+                left: -1px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            
+             &--opt { 
+                position: absolute; 
+                list-style: none;
+                margin: 0;
+                padding: 5px 0;
+                @mixin clearfix; 
+                left: 0;
+                right: 0;
+                bottom: -72px;
+                background-color: #fff;
+                box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                -ms-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                -o-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                -webkit-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                -moz-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                z-index: -10;
+                opacity: 0;
+                visibility: hidden;
+                 
+                
+                 
+                li {
+                    float: none;
+                    padding: 6px 5px;
+/*                    text-align: center;*/
+
+                    &:first-child {
+                        margin-right: 0px; 
+                        border-bottom: 1px solid $mainDarkGray;
+                    }
+                    
+                    & > ul {
+                         font-size: .9375rem;
+                         list-style: none;
+                         margin: 0;
+                         padding: 1px 0; 
+                         position: absolute;
+                         top: 4px;
+                         right: -100px;
+                         box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                         -ms-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                        -o-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                        -webkit-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                        -moz-box-shadow: 0px 1px 3px 1px rgba($mainDarkBlack, 0.3);
+                         background-color: #fff;
+                        opacity: 0;
+                        visibility: hidden;
+                        
+                        li {
+/*                            background-color: rgba($bgHeader, .3);*/
+                            padding: 8px 10px 8px 0;
+                            margin: 0; 
+                            
+                            &:last-child {
+/*                                background-color: $mainLightRed;*/
+/*                                color: #fff;*/
+                                border-top: 1px solid $mainDarkGray; 
+                            }    
+                        }
+                        
+                        &__visible {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                 
+                &__visible {
+                   opacity: 1;
+                   visibility: visible;
+              }
+                
+            }
+        }
+        
+    }
+    
+    
+    &--msg {
+        display: block;
+        font-size: 0.9375rem;
+        background-color: rgba($bgHeader, .3);
+        padding-bottom: 5px;
+        font-family: 'Lato','Roboto', sans-serif !important;
+        
+        &__maintitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: rgba($mainDarkBlack, .5);
+            width: 100%;
+            margin-top: 180px ;
+            padding: 10px 0 10px 0;
+            text-align: center;
+            background-color: $mainDarkGray; 
+            position: relative;
+        }
+        
+       
+        &__wrapper {
+            background-color: #fff;
+            position: relative; 
+            margin: 0 10px 20px 10px;
+            
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                bottom: 0;
+                z-index: 2;
+                background-color: $bgHeader;
+                width: 2px;
+                right: 0;
+            }
+        }
+        
+         &__form {
+            position: absolute;
+             z-index: 1;
+             left: 0px;
+             top: 0px;
+             
+             & > div {
+                background-color: #fff;
+/*                border-radius:  15px;*/
+                 border: 1px solid $mainDarkGreen;
+                 
+                 & > span {
+                    position: absolute;
+                     transform: translateX(-20%); 
+                     left: 20%;
+                     color: $mainLightGreen;
+                     top: 50%;
+                     transform: translateY(-50%);
+                      cursor: pointer;
+                 }
+             } 
+             
+             &--ck {
+                 cursor: pointer;
+                 width: 21px;
+                 height: 22px;
+                 opacity: 0; 
+             }
+             
+        }
+        
+        &__no {
+            padding: 0 12px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $mainDarkGray;
+            color: $mainFontColor;
+            text-align: center;
+            font-size: 1.5rem;
+            
+            &--id {
+                position: absolute;
+                top: 35%; 
+                transform: translateY(-35%);
+                left: 50%; 
+                transform: translateX(-50%); 
+            }
+        }
+        
+        &__header {
+            width: 100%;
+            @mixin clearfix;
+            box-shadow: inset 0px 1px 10px $mainDarkGray;
+            -o-box-shadow: inset 0px 1px 10px $mainDarkGray;
+            -ms-box-shadow: inset 0px 1px 10px $mainDarkGray;
+            -webkit-box-shadow: inset 0px 1px 10px $mainDarkGray;
+            -moz-box-shadow: inset 0px 1px 10px $mainDarkGray;
+            padding: 5px 10px 5px 28px; 
+            background-color: rgba($bgHeader, .5);
+            color: rgba($mainFontColor, .7);
+            font-size: .875rem;
+/*            background-color: $bgHeader;*/
+            
+            &--date {
+                float: left;
+            }
+            
+            &--cal {
+                float: right;
+            }
+        }
+        
+        &__title {
+            font-size: 1rem;
+            color: rgba($mainDarkBlack, .9);
+            text-align: center; 
+            margin: 10px 10px 10px 28px; 
+            cursor: pointer;
+            position: relative;
+            
+            
+            &--content {
+                margin: 0;
+                padding: 0 120px 0 10px;  
+                text-align: center;
+                white-space: nowrap; 
+                text-overflow: ellipsis; 
+                overflow: hidden;
+                font-weight: 600 !important; 
+                
+                &__rej {
+/*                    color: $mainLightRed;*/
+                }
+                 &__accept {
+/*                    color: $mainLightGreen;*/
+                }
+            }
+            
+            &--icon {       
+                position: absolute;
+                right: 0; 
+                top: -3px; 
+                
+                & > div {
+                    position: absolute; 
+                    width: 25px;
+                    height: 25px;
+                    background-color: $mainLightGray;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                &__edit {
+                    right: 85px;   
+                }
+                &__share {
+                    right: 45px;   
+                }
+                &__del {
+                    right: 10px;   
+                } 
+            }
+        }
+        
+        &__btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            border: none;
+            outline: none;
+            padding: 5px 5px;
+            
+            &--del { 
+                right: 10px;
+                background-color: $mainLightRed;
+                color: #fff;
+                box-shadow: 0px 2px 5px $mainLightRed;
+                -o-box-shadow: 0px 2px 5px $mainLightRed;
+                -ms-box-shadow: 0px 2px 5px $mainLightRed;
+                -webkit-box-shadow: 0px 2px 5px $mainLightRed;
+                -moz-box-shadow: 0px 2px 5px $mainLightRed;
+                border: 1px solid rgba(255,255,255, .6);
+                cursor: pointer;
+            }
+            &--share {
+                right: 120px;
+                background-color: $mainLightBlue;
+                color: #fff;
+                box-shadow: 0px 2px 5px rgba($mainDarkBlack, .6);
+                -o-box-shadow: 0px 2px 5px rgba($mainDarkBlack, .6);
+                -moz-box-shadow: 0px 2px 5px rgba($mainDarkBlack, .6);
+                -webkit-box-shadow: 0px 2px 5px rgba($mainDarkBlack, .6);
+                -ms-box-shadow: 0px 2px 5px rgba($mainDarkBlack, .6);
+                 border: 1px solid rgba($mainLightBlue, .6); 
+                cursor: pointer;
+            }
+        }
+        
+        &__footer {
+            list-style: none;
+            @mixin clearfix;   
+            padding: 5px 0 5px 30px;
+            margin: 0 0 0 0;
+            background-color: rgba($bgHeader, .5);
+            box-shadow: inset 0px -1px 10px $mainDarkGray;
+            -o-box-shadow: inset 0px -1px 10px $mainDarkGray;
+            -ms-box-shadow: inset 0px -1px 10px $mainDarkGray;
+            -webkit-box-shadow: inset 0px -1px 10px $mainDarkGray;
+            -moz-box-shadow: inset 0px -1px 10px $mainDarkGray;
+            color: rgba($mainFontColor, .7);
+            font-size: .875rem;
+            
+            &--memoaccept {
+                color: $mainLightGreen; 
+            }
+            
+            &--memorej {
+                color: $mainLightRed; 
+            }
+            
+            li {
+                float: left;
+                cursor: pointer;
+                
+                &:last-child {
+                    float: right;
+                    margin-right: 10px;
+                     cursor: default;
+                }
+            }
+        }
+    }
+    
+    &--fwd {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: $mainDarkBlack;
+        z-index: 3; 
+    }
+}

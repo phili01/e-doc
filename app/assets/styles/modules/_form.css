@@ -1,11 +1,17 @@
 .form {
      display: block;
      margin-top: 1.875rem;
+    position: relative;
     
     &__group {
         margin: 3.125rem 0;
         font-size: .9375rem;
         position: relative;
+        
+        &--file {
+            background-color: $mainLightGray;
+            border: 1px dashed $mainDarkGray;
+        }
     }
     
      &__opt {
@@ -21,6 +27,22 @@
     
     &__desc {
         color: rgba($mainDarkBlack, .55);
+        
+        &--file {
+            position: absolute;
+            left: 40%;
+            transform: translateX(-40%);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    
+    &__file {
+        position: relative;
+        cursor: pointer;
+        opacity: 0;
+        width: 100%;
+        padding: 20px 0;
     }
     
     &__text {
@@ -30,6 +52,16 @@
         border-bottom: 1px solid $mainDarkGray;
         width: 100%; 
         padding: 10px 0px;
+        margin: 0 auto;
+        
+        &--sm {
+            width: 50%;
+            padding: 10px 5px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
     }
     
     &__select {
