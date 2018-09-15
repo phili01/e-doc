@@ -1,0 +1,53 @@
+.btn {
+    position: relative;
+    
+    &__md {
+        width: 200px;
+        padding: 20px 0;
+        border: 1px solid $mainDarkGray;
+        
+         &--left {
+            position: absolute;
+            left: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        &--right {
+            position: absolute;
+            right: 20px; 
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    }
+    
+    &__mr--bt {
+          margin-bottom: 20px;
+    }
+    
+    &__green {
+        background-color: $mainLightGreen;
+        color: #fff;
+        box-shadow: 0px 11px 24px 0px rgba($mainDarkBlack, 0.25); 
+        -o-box-shadow: 0px 11px 24px 0px rgba($mainDarkBlack, 0.25); 
+        -ms-box-shadow: 0px 11px 24px 0px rgba($mainDarkBlack, 0.25); 
+        -webkit-box-shadow: 0px 11px 24px 0px rgba($mainDarkBlack, 0.25); 
+        -moz-box-shadow: 0px 11px 24px 0px rgba($mainDarkBlack, 0.25); 
+        
+        &:hover {
+           background-color: $mainDarkGreen; 
+            box-shadow: none;
+            transition: all .3s ease-in;
+        }
+    }
+    
+    &__gray {
+         background-color: $mainExtraLightGray;
+        color: $mainFontColor; 
+        
+        &:hover {
+            background-color: $mainDarkGray;
+        }
+    }
+}

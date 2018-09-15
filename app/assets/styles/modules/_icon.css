@@ -10,6 +10,7 @@
         transform: translateY(-25%);
         left: 50%;
         transform: translateX(-50%);
+        
     }
     
     &__site-header--clock {
@@ -68,8 +69,81 @@
     }
     
     &__site-main--content__pen {
-        margin-right: 5px;
+        margin-right: 10px;
         color: $mainLightGreen;
     }
     
+    &__site-main--form__icon {
+        margin-right: 20px;
+    }
+    
+    &__site-compose--file {
+        margin-right: 10px;
+        color: $mainFontColor;
+    }
+    &__mymemo--filter__search {
+        position: absolute;
+        top: 13px;
+        left: 74%;
+        transform: translateX(-74%);
+        color: $mainDarkGray;  
+    }
+    
+    &__mymemo--filter__arrow {
+        margin-left: 10px;
+    }
+    
+    &__mymemo--filter__memo {
+        color: #fff;
+    }
+    
+    &__mymemo--filter__caret {
+        position: absolute;
+        right: 10px;
+        top: 25%;
+        transform: translateY(-25%);
+    }
+    
+     &__mymemo--filter__all {
+        margin-right: 10px;
+        margin-left: 5px;
+         
+         &--fwd {
+             color: rgba($mainDarkBlack, .5);
+         }
+         
+         &--del {
+             color: $mainLightRed;
+         }
+    }
+    
+    &__mymemo--msg {
+        margin-right: 5px;
+    }
+    
+    &__mymemo--msg__title {
+        &--edit {
+            color: $mainLightBlue; 
+/*            margin-right: 20px;*/
+        }
+        &--reply {
+            color: $mainLightGreen; 
+/*            margin-right: 20px;*/
+        }
+        &--del {
+            color: $mainLightRed; 
+        }
+        
+        &--list {
+             margin-right: 10px; 
+        }
+    }
+    
+    &__mymemo--msg__btn--icn {
+        margin-right: 10px; 
+    }
+    
+    &__mymemo--filter__close {
+        margin-right: 5px; 
+    }
 }

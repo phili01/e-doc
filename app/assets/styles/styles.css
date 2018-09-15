@@ -10,5 +10,7 @@
 @import "./modules/_site-main";
 @import "./modules/_site-main__nav";
 @import "./modules/_site-main__content";
+@import "./modules/_site-main__mymemo";
 @import "./modules/_page-section";
 @import "./modules/_form";
+@import "./modules/_btn";
