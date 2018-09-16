@@ -136,6 +136,14 @@
             
             &--rec {
                 background-color: $mainLightGreen;     
+            } 
+            
+            &--msg {
+                background-color: $mainDarkGreen; 
+            }
+            
+            &--msgsent {
+                background-color: rgba($mainDarkBlack, .6);
             }
             
             &--filter {
@@ -263,9 +271,50 @@
             font-size: 1rem;
             color: rgba($mainDarkBlack, .9);
             text-align: center; 
-            margin: 10px 10px 10px 28px; 
+            margin: 14px 10px 14px 28px; 
             position: relative;
             
+            &--memo {
+               list-style: none;
+                margin: 0; 
+                padding: 0;
+                position: relative;
+                 
+                & > li {
+                    text-align: left;
+                    white-space: nowrap; 
+                    text-overflow: ellipsis; 
+                    cursor: pointer; 
+                    overflow: hidden; 
+                    padding: 12px 0; 
+                    position: relative;
+                    padding-left: 100px;
+                    font-weight: 600;
+                    
+                    &:first-child {
+                        border-bottom: 1px solid $mainDarkGray;
+/*                        background-color: rgba($mainLightGray, .9); */
+                        font-weight: 400; 
+                    }
+                    
+                    & > div {
+                        background-color: rgba($mainDarkBlack, .2);
+                        padding: 5px 10px;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border-radius: 1px;
+                        font-size: .875rem;
+                    } 
+                }
+                
+                 &__msg {
+                    background-color: $mainLightGray !important;  
+                    color: $mainFontColor;
+                     border: 1px dotted $mainLightGreen;
+                }
+            }
             
             &--content {
                 margin: 0 120px 0 0;
@@ -330,6 +379,18 @@
                     z-index: 1;
                     transition: all .3s ease-in;
                 }
+                
+                &__msg {
+                    right: -10px; 
+                    top: 30px;
+                    width: 100%;
+                    
+                }
+            }
+            
+            &--msg {
+                padding: 0;
+                 margin: 0px 10px 0px 28px;
             }
         }
         
@@ -413,7 +474,17 @@
                     float: right;
                     margin-right: 10px;
                      cursor: default;
+                    
                 }
+                
+            }
+             &--title {
+                color: $mainLightGreen;
+            }
+                
+            &--name {
+                  margin-left: 5px;
+                  font-weight: 600;    
             }
         }
     }

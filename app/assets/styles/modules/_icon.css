@@ -165,6 +165,10 @@
         transform: translateY(-50%); 
     }
     
+    &__mymemo--icn {
+        margin-right: 5px;
+    }
+    
     &__view--icn {
         margin-right: 5px;
     }
