@@ -816,6 +816,10 @@ img {
                 transform: translateY(-50%); 
     }
 
+.icon__view--icn {
+        margin-right: 5px;
+    }
+
 .site-main {
     position: relative;
     height: 100vh;
@@ -1002,6 +1006,10 @@ img {
             transition: all .4s ease-in; 
         }
 
+.site-main__content--view {
+        background-color: rgba(0,0,0, .8); 
+    }
+
 .site-main__mymemo {
     position: relative;
 }
@@ -1144,6 +1152,10 @@ img {
             background-color: rgba(0,0,0, .4); 
             position: relative;
         }
+
+.site-main__mymemo--msg__maintitle--rec {
+                background-color: #599f2f;     
+            }
 
 .site-main__mymemo--msg__maintitle--filter {
                 position: absolute;
@@ -1735,14 +1747,28 @@ img {
         }
 
 .page-section {
-    padding: 10px 50px 10px 50px; 
+    padding: 10px 50px 10px 50px;
 }
+
+.page-section__pst {
+        position: relative;
+    }
+
+.page-section__pst--overlay {
+            background-color: rgba(60,160,207, .2);
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: .5;   
+            opacity: 1;  
+        }
 
 .form {
      display: block;
      margin-top: 1.875rem;
-    position: relative;
-    
+     position: relative;
 }
 
 .form__group {
@@ -1837,6 +1863,17 @@ img {
             z-index: 0;
             transition: all .3s ease-in;
         }
+
+.form__sm {
+        margin-top: 1px;
+    }
+
+.form__submit {
+        padding: 5px 20px;
+        background-color: #fff;
+        border: 1px solid #d2d2d2;
+        margin-top: 20px;
+    }
 
 .btn {
     position: relative;

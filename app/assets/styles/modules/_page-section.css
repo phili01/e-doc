@@ -1,3 +1,18 @@
 .page-section {
     padding: 10px 50px 10px 50px; 
+    
+    &__pst {
+        position: relative;
+        
+        &--overlay {
+            background-color: rgba($mainLightBlue, .2);
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: .5;   
+            opacity: 1;  
+        }
+    }
 }

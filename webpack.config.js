@@ -4,13 +4,14 @@ module.exports = {
   mode: 'development',
   entry: {
       App: "./app/assets/scripts/App.js",
-      SiteDoc: "./app/assets/scripts/SiteDoc.js"
+      SiteDoc: "./app/assets/scripts/SiteDoc.js",
+      ViewDoc: "./app/assets/scripts/ViewDoc.js"
   },
   output: {
     path: path.resolve(__dirname, './app/temp/scripts'),
     filename: '[name].js'
   },
-  module: {
+  module: { 
     loaders: [
       {
         test: /\.js$/,

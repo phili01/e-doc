@@ -134,6 +134,10 @@
             background-color: rgba($mainDarkBlack, .4); 
             position: relative;
             
+            &--rec {
+                background-color: $mainLightGreen;     
+            }
+            
             &--filter {
                 position: absolute;
                 right: 20px; 

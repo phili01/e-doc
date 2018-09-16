@@ -17,3 +17,14 @@ gulp.task('styles', function(){
 	})
 	.pipe(gulp.dest('./app/temp/styles'));
 });
+
+
+gulp.task('viewmemo', function(){
+	return gulp.src('./app/assets/styles/viewmemo.css')
+	.pipe(postcss([cssImport,mixins,cssvars,nested, hexrgba,autoprefixer]))
+	.on('error', function(errorInfo){
+		console.log(errorInfo.toString());
+		this.emit('end');
+	})
+	.pipe(gulp.dest('./app/temp/styles/view')); 
+});

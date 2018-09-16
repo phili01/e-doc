@@ -1,7 +1,7 @@
 .form {
      display: block;
      margin-top: 1.875rem;
-    position: relative;
+     position: relative;
     
     &__group {
         margin: 3.125rem 0;
@@ -93,4 +93,14 @@
         }
     }
     
+    &__sm {
+        margin-top: 1px;
+    }
+    
+    &__submit {
+        padding: 5px 20px;
+        background-color: #fff;
+        border: 1px solid $mainDarkGray;
+        margin-top: 20px;
+    }
 }

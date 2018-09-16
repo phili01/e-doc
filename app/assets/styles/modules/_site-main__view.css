@@ -1,0 +1,178 @@
+.site-main__view {
+    position: relative;
+    background-color: #fff ;
+    margin-top: 40px;
+    min-height: 460px; 
+    z-index: 1;
+    
+    &--header {
+        font-size: .9375rem; 
+        @mixin clearfix;
+        padding: 20px; 
+        position: relative;
+        background: url("../../../assets/images/formlogo.jpg") no-repeat center center; 
+        
+        &__title {
+            float: right; 
+        }
+        
+        &__logo {
+            position: absolute; 
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50%;
+            transform: translateX(-50%); 
+        }
+        
+        &__det {
+            list-style: none;
+            margin: 40px 0 0 0;
+            padding: 0;
+            
+            & > li {
+                padding: 10px 0;
+                position: relative;
+                
+                & > span {
+                    position: absolute;
+                    left: 80px;
+                    font-size: 1rem;
+                    font-weight: bold;  
+                }
+            }
+        }
+    }
+    
+    &--title {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: underline;
+        line-height: 2;
+        padding: 0 20px;
+    }
+    
+    &--content {
+        padding: 0 20px; 
+        color: $mainFontColor;
+        background-color: #fff;
+        line-height: 2;
+    }
+    
+    &--user {
+        list-style: none;
+        font-size: 1rem;
+        @mixin clearfix;
+        text-align: right;  
+           
+        & > li {
+            padding: 10px 20px 10px 40px;
+            text-align: right; 
+            font-weight: 600;
+            
+            &:last-child {
+                text-decoration: underline;
+                padding-bottom: 10px; 
+                margin-bottom: 40px;
+            }
+        }
+    }
+    
+    &--footer {
+        position: absolute;
+        list-style: none;
+        font-size: .875rem;
+        @mixin clearfix;
+        bottom: -12px;
+        left: -15px; 
+        
+        & > li {
+            float: left;
+            padding: 10px  20px 10px 20px;
+            border: 1px solid rgba($mainDarkBlack, .1);
+            border-right: 1px dotted rgba($mainDarkBlack, .6);
+            background-color: rgba($mainDarkGray, .2);  
+            cursor: pointer;
+            
+            &:hover {
+                background-color: rgba($mainDarkGray, 1)   
+            }
+        }
+        
+        &__apprv {
+            background-color: $mainLightGreen !important;
+            color: #fff;
+        }
+        
+        &__rej {
+            background-color: $mainLightRed !important;   
+            color: #fff;
+        }
+    }
+    
+    &--overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($mainDarkBlack, .5);  
+        z-index: 1; 
+         opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease-in;
+        
+         &__visible {
+            opacity: 1;
+            visibility: visible;
+            transition: all .3s ease-out;
+        }
+    }
+    
+    &--rej {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        width: 80%; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: .9375rem;
+        background-color: #fff; 
+        padding: 0px 0px; 
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease-in;
+        
+        &__title {
+            z-index: 2; 
+            padding: 15px 10px;
+            margin: 0; 
+            text-align: left;  
+            background-color: $mainLightGreen; 
+            color: #fff;
+            font-size: .9375rem;
+        }
+        
+        &__form {
+            padding: 0 20px;
+            
+            &--txt { 
+                padding: 10px;
+                border: 1px solid $mainDarkGray;
+                margin-top: 15px;
+            }
+            
+            &--sub {
+                background-color: $mainLightGray; 
+                float: right; 
+                margin-bottom: 10px;  
+            }
+        }
+        
+        &__visible {
+            opacity: 1;
+            visibility: visible;
+            transition: all .3s ease-out;
+        }
+    }
+}
