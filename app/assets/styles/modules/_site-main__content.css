@@ -1,12 +1,13 @@
 .site-main__content {
 /*    background-color: $bgHeader;*/
     width: 100%;
-    padding-left: 300px; 
+    margin-left: 300px; 
     overflow: hidden;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     overflow-y: auto;
+    position: relative;
     
     &--header {
         text-align: center;
@@ -15,6 +16,20 @@
         padding-bottom: 20px;
         border-bottom: 1px solid $mainLightGreen;
         font-weight: 300;
+    }
+    
+    &--overlay {
+        position: absolute;
+        width: 100vw;
+        height: 100vh; 
+        z-index: 1; 
+        display: none;
+        
+        &__visible {
+            display: block !important; 
+             background-color: rgba($mainDarkBlack, .5);
+            transition: all .4s ease-in; 
+        }
     }
     
 }

@@ -1,5 +1,8 @@
 .icon {
     &__rotate {
+        & > svg {
+            transform: rotate(180deg);
+        }
     }
     
     &__site-header--search {
@@ -52,6 +55,9 @@
     
     &__site-main--plane {
         margin-right: 10px;
+        position: absolute;
+        left: 5px;
+        color: rgba($mainFontColor, .8);
     }
     
     &__site-main--plane__rec {
@@ -123,7 +129,7 @@
     
     &__mymemo--msg__title {
         &--edit {
-            color: $mainLightBlue; 
+            color: rgba($mainDarkBlack, .5);   
 /*            margin-right: 20px;*/
         }
         &--reply {
@@ -141,9 +147,21 @@
     
     &__mymemo--msg__btn--icn {
         margin-right: 10px; 
+        
+        &__share {
+            color: $mainLightGreen; 
+        }
     }
     
     &__mymemo--filter__close {
         margin-right: 5px; 
+    }
+    
+    &__mymemo--fwd__search {
+        position: absolute;
+        color: rgba($mainLightGreen, .5);  
+        right: 20px;   
+        top: 50%; 
+        transform: translateY(-50%); 
     }
 }
