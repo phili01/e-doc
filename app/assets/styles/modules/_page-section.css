@@ -1,18 +1,68 @@
 .page-section {
-    padding: 10px 50px 10px 50px; 
+    padding: 10px 20px 10px 20px; 
     
     &__pst {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        overflow: hidden;
+        overflow-y: auto;  
+        
+        &--abst {
+            position: relative;
+        }
         
         &--overlay {
             background-color: rgba($mainLightBlue, .2);
             position: absolute; 
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: -8px;
+            left: -50px;
+            right: -50px;
+            bottom: -50px;
             z-index: .5;   
             opacity: 1;  
         }
+        
+                    
+        &--overlayblk {
+            position: absolute; 
+            top: 0; 
+            left: -50px;
+            right: -50px;
+            bottom: 0px;
+            z-index: 1;
+            background-color: rgba($mainDarkBlack, .5); 
+            opacity: 0;
+            visibility: hidden;
+        
+            &__visible { 
+                opacity: 1; 
+                bottom: -110px;
+                display: flex;
+                flex-grow: 1;
+                visibility: visible;
+                background-color: rgba($mainDarkBlack, .5);
+                transition: all .4s ease-in;   
+            }
+        }
+        
+    }
+    
+    &__pst-min {
+         overflow: hidden;
+        overflow-y: auto;
+    }
+    
+    @mixin atSmall {
+        padding: 10px 30px 10px 30px;  
+    }
+    
+    @mixin atMedium {
+        padding: 10px 40px 10px 40px;       
+    }
+    
+    @mixin atLarge {
+        padding: 10px 50px 10px 50px; 
     }
 }

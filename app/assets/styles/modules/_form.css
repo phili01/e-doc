@@ -55,12 +55,19 @@
         margin: 0 auto;
         
         &--sm {
-            width: 50%;
+            width: 90%;
             padding: 10px 5px;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
             
+            @mixin atSmall {
+                 width: 70%; 
+            }
+            
+            @mixin atMedium {
+                 width: 50%; 
+            }
         }
     }
     

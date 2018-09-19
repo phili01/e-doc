@@ -7,30 +7,29 @@
         <meta name="keywords" content="Uniosun e-document management system">
         <meta name="description" content="New tech to Track and Easily submit documents">
         <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="temp/styles/styles.css" type="text/css" rel="stylesheet">
-        <link href="temp/styles/view/viewmemo.css" type="text/css" rel="stylesheet">
+        <link href="temp/styles/view/dash.css" type="text/css" rel="stylesheet"> 
     </head>
     <body>
        <div class="site-header">
            <div class="wrapper wrapper__header">
                 <div class="site-header__logo">
-                       <picture>
-                           <img
-                           sizes="300px"
-                           srcset="assets/images/uniosunlogo--large.jpg 300w, assets/images/uniosunlogo--large-hi-dpi.jpg 600w" alt="uniosun logo">
-                       </picture>
-                       <div class="site-header__logo--shade">
-                           
-                       </div>
+                        <div class="site-header__logo--sm">
+                           <img src="assets/images/formlogo--sm.jpg"  alt="uniosun logo">    
+                           <div class="site-header__logo--shade">
+
+                           </div>
+                        </div>
                    </div>
                    <div class="site-header__content">
-<!--
-                      <picture>
-                          
-                      </picture>
--->
+
                       <div class="site-header__content--wrapper">
+                          <span class="site-header__content--nav">
+                              <i class="fas fa-list"></i>
+                          </span>  
+                          
                            <form class="site-header__content--form">
                                 <input type="text" placeholder="search ..." name="header_search" class="site-header__content--form__input">
                                 <div class="site-header__content--form__submit">
@@ -66,6 +65,15 @@
            <div class="site-main">
                <div class="wrapper wrapper__main">
                    <div class="site-main__nav">
+                     <div class="site-main__nav--logo">
+                          <picture>
+                           <img sizes="300px"
+                               srcset="assets/images/uniosunlogo--large.jpg 300w, assets/images/uniosunlogo--large-hi-dpi.jpg 600w" alt="uniosun logo">
+                           </picture>
+                           <div class="site-main__nav--logo__shade">
+
+                           </div>
+                        </div> 
                       <div class="site-main__nav--compose">
                           <i class="fas fa-pen-alt icon icon__site-main--pen"></i>
                           Compose
@@ -73,11 +81,11 @@
                       <div class="site-main__nav--items__shade"></div>
                       <ul class="site-main__nav--items">
                           <li>
-                               <span><i class="fas fa-cog icon icon__site-main--item"></i></span>
+                               <span><i class="fas fa-tachometer-alt icon icon__site-main--item"></i></span>
                                Dashboard
                             </li> 
                           <li class="site-main__nav--items__doc">
-                             <span><i class="far fa-file icon icon__site-main--item"></i></span> Memo
+                             <span><i class="far fa-file icon icon__site-main--item"></i></span> Document
                               <i class="fas fa-angle-down icon icon__site-main--item__angle"></i>
                               
                               <ul class="site-main__nav--items__doc--opt">        
@@ -117,61 +125,103 @@
                       </ul>
                       <div class="site-main__nav--ctadmin">
                           <i class="far fa-comment-alt icon icon__site-main--chat"></i> Chat Admin
-                      </div>
+                      </div> 
                       <div class="site-main__nav--shade"></div> 
                    </div>
-                    <div class="site-main__content site-main__content--view">
-                        
-                      <div class="page-section page-section__pst">
-                         <div style="position: relative">
-                         <div class="site-main__view">
-                             <div class="site-main__view--header">
-                                 <div class="site-main__view--header__title">
-                                     19 feb 2016
-                                 </div>
-                                 <ul class="site-main__view--header__det">
-                                     <li>To: <span>the name</span></li>
-                                     <li>From: <span>the name</span></li>
-                                     <li>Subject: <span>the header memo</span></li>
-                                 </ul>
-<!--                                 <img src="./assets/images/formlogo.jpg" class="site-main__view--header__logo">-->
-                             </div> 
-                             <div class="site-main__view--title">
-                                 the memo title 
-                             </div>
-                             <div class="site-main__view--content">
-                                 the contents the contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contentsthe contents
-                             </div>
-                             <ul class="site-main__view--user">
-                                 <li class="site-main__view--user__name">the name</li>
-                                 <li class="site-main__view--user__sign">sign</li>
-                             </ul>
-                             <ul class="site-main__view--footer"> 
-                                 <li class="site-main__view--footer__apprv"><i class="fas fa-check-circle icon icon__view--icn"></i> approve</li>
-                                  <li><i class="fas fa-print icon icon__view--icn"></i> Print</li>
-                                 <li class="site-main__view--footer__rej"><i class="fas fa-times-circle icon icon__view--icn"></i> reject</li>
-                                 <li><i class="fas fa-save icon icon__view--icn"></i> Attach</li>
-                                 <li><i class="fas fa-envelope icon icon__view--icn"></i> view message</li>  
-                             </ul>
-                             <div class="site-main__view--overlay"></div>
-                             <div class="site-main__view--rej">
-                                 <p class="site-main__view--rej__title"><i     class="fas fa-pen-alt icon icon__view--icn"></i> Reasons for rejecting</p> 
-                             <form class="form__sm site-main__view--rej__form"> 
-                                 <textarea name="" rows="10" class="form__textarea site-main__view--rej__form--txt" placeholder="Type here ...."></textarea>
-                                 <input type="submit" name="submit" class="form__submit site-main__view--rej__form--sub">
-                             </form>
-                             </div>
+                    <div class="site-main__content">
+                      <div class="page-section page-section__pst-min"> 
+                        <h3 class="site-main__content--header">
+                               <i class="fas fa-tachometer-alt icon icon__site-main--content__pen"></i> E-DashBoard
+                           </h3>
+                         <div class="site-main__dash"> 
+
+                           <div class="site-main__dash--card">
+                               <div class="site-main__dash--card__proc">
+                                   <ul class="site-main__dash--card__item site-main__dash--card__item--proc">
+                                        <li><i class="fas fa-spinner icon icon__dash--icn"></i></li>
+                                        <li>
+                                            <div class="site-main__dash--card__item--no">
+                                                2
+                                            </div>
+                                            <div class="site-main__dash--card__item--opt">
+                                                Processing
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                    <div class="site-main__dash--card__footer site-main__dash--card__footer--proc">View Details <i class="fas fa-arrow-circle-right icon icon__dash--footer__icn"></i></div>
+                               </div>       
+                            </div>
+                            
+                            <div class="site-main__dash--card">
+                               <div class="site-main__dash--card__acc">
+                                    <ul class="site-main__dash--card__item site-main__dash--card__item--acc">
+                                        <li><i class="fas fa-check icon icon__dash--icn"></i></li>
+                                        <li class="">
+                                            <div class="site-main__dash--card__item--no">
+                                                2
+                                            </div>
+                                            <div class="site-main__dash--card__item--opt">
+                                                Accepted
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                    <div class="site-main__dash--card__footer site-main__dash--card__footer--acc">View Details <i class="fas fa-arrow-circle-right icon icon__dash--footer__icn"></i></div>
+                                </div>       
+                            </div>
+                            
+                            <div class="site-main__dash--card">
+                               <div class="site-main__dash--card__rej">
+                                    <ul class="site-main__dash--card__item site-main__dash--card__item--rej">
+                                        <li><i class="fas fa-times icon icon__dash--icn"></i></li>
+                                        <li>
+                                            <div class="site-main__dash--card__item--no">
+                                                2
+                                            </div>
+                                            <div class="site-main__dash--card__item--opt">
+                                                Rejected
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                    <div class="site-main__dash--card__footer site-main__dash--card__footer--rej">View Details <i class="fas fa-arrow-circle-right icon icon__dash--footer__icn"></i></div> 
+                                </div>      
+                            </div>
+            
+                            
                          </div>
-                         <div class="page-section__pst--overlay"></div>
-                        </div>
+                         <div id="piechart" class="api"></div>
                       </div>
-                       
                    </div>
                     <div class="wrapper__main--footer">  
                     </div>
+                    
+                    <div class="wrapper__main--overlay"></div> 
+                    
                </div>
            </div>
     </body>
     <script src="./temp/scripts/App.js"></script>
-    <script src="./temp/scripts/ViewDoc.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Processing',     11],
+          ['Approved',      2],
+          ['Rejected',  2]
+        ]);
+
+        var options = {
+          title: 'My E-Documents',
+          colors: ['#3ca0cf','#599f2f','#ff0000']    
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
 </html>

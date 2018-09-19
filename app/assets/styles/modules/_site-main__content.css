@@ -1,13 +1,12 @@
 .site-main__content {
-/*    background-color: $bgHeader;*/
+/*    background-color: $bgHeader; */
     width: 100%;
-    margin-left: 300px; 
-    overflow: hidden;
+    margin-left: 0; 
+    overflow: hidden; 
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    overflow-y: auto;
     position: relative;
+
     
     &--header {
         text-align: center;
@@ -19,21 +18,15 @@
     }
     
     &--overlay {
-        position: absolute;
-        width: 100vw;
-        height: 100vh; 
-        z-index: 1; 
-        display: none;
-        
-        &__visible {
-            display: block !important; 
-             background-color: rgba($mainDarkBlack, .5);
-            transition: all .4s ease-in; 
-        }
+       
     }
     
     &--view {
         background-color: rgba($mainDarkBlack, .8) !important; 
+    }
+    
+    @mixin atLarge {
+        margin-left: 300px; 
     }
     
 }

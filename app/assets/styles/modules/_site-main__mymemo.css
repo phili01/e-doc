@@ -10,7 +10,7 @@
         &__opt {
             position: absolute; 
             top: -34px; 
-            right: 25%; 
+            right: 5%; 
             font-size: .9375rem;
             background-color: rgba($mainDarkBlack, .1); 
             padding: 6px 10px;  
@@ -30,6 +30,14 @@
                     display: none;
                 }
             }
+            
+            @mixin atSmall {
+                right: 16%;  
+            }
+            
+            @mixin atMedium {
+                right: 25%;
+            }
     
         }
         
@@ -38,8 +46,8 @@
             font-size: .9375rem;
             position: absolute;
             top: -34px; 
-            left: 30%;
-            transform: translateX(-30%);
+            left: 8%; 
+            transform: translateX(-8%);
             background-color: rgba($bgHeader, .4);    
             padding: 5.5px 10px 5.5px 30px; 
             border-radius: 5px; 
@@ -104,6 +112,16 @@
               }
                 
             }
+            
+            @mixin atSmall {
+                left: 20%; 
+                transform: translateX(-20%);
+            }
+            
+            @mixin atMedium {
+                left: 28%;
+                transform: translateX(-28%);
+            }
         }
         
         &__hide {
@@ -129,13 +147,51 @@
             color: #fff;
             width: 100%;
             margin-top: 180px ;
-            padding: 10px 0 10px 0;
+            padding: 10px 0 10px 0;  
             text-align: center;
             background-color: rgba($mainDarkBlack, .4); 
             position: relative;
             
+            &--pt {
+                padding: 25px 0 25px 0;    
+            }
+            
+            &--overlay {
+                width: 100%; 
+                display: block; 
+                padding: 0px 0;  
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                &--gy {  
+                   background-color: rgba($mainDarkBlack, .5); 
+                }
+                
+                &__grn {
+                     background-color: rgba($mainLightGreen, .7);   
+                }
+            }
+            
             &--rec {
                 background-color: $mainLightGreen;     
+            } 
+            
+            &--msg {
+                  background: url("../../../assets/images/green3.jpg") top left; 
+                background-color: transparent;       
+                background-size: contain;     
+            } 
+            
+            &--msgsent {         
+/*                background-color: rgba($mainDarkBlack, .6);  */ 
+                background: url("../../../assets/images/gray4.jpg") top left; 
+                background-color: transparent;      
+                background-size: contain;     
+/*                 background-color: rgba($mainDarkBlack, .2);  */
             }
             
             &--filter {
@@ -257,15 +313,67 @@
             &--cal {
                 float: right;
             }
+            
+            &--patt { 
+                 background: url("../../../assets/images/plane3.jpg") top center;  
+                background-color: transparent;      
+                background-size: contain;       
+            }
+            
+             &--patt1 {  
+                background-color: transparent;      
+                background-size: contain;       
+            }
         }
         
         &__title {
             font-size: 1rem;
             color: rgba($mainDarkBlack, .9);
             text-align: center; 
-            margin: 10px 10px 10px 28px; 
+            margin: 14px 10px 14px 28px; 
             position: relative;
             
+            &--memo {
+               list-style: none;
+                margin: 0; 
+                padding: 0;
+                position: relative;
+                 
+                & > li {
+                    text-align: left;
+                    white-space: nowrap; 
+                    text-overflow: ellipsis; 
+                    cursor: pointer; 
+                    overflow: hidden; 
+                    padding: 12px 0; 
+                    position: relative;
+                    padding-left: 100px;
+                    font-weight: 600;
+                    
+                    &:first-child {
+                        border-bottom: 1px solid $mainDarkGray;
+/*                        background-color: rgba($mainLightGray, .9); */
+                        font-weight: 400; 
+                    }
+                    
+                    & > div {
+                        background-color: rgba($mainDarkBlack, .2);
+                        padding: 5px 10px;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border-radius: 1px;
+                        font-size: .875rem;
+                    } 
+                }
+                
+                 &__msg {
+                    background-color: $mainLightGray !important;  
+                    color: $mainFontColor;
+                     border: 1px dotted $mainLightGreen;
+                }
+            }
             
             &--content {
                 margin: 0 120px 0 0;
@@ -330,6 +438,18 @@
                     z-index: 1;
                     transition: all .3s ease-in;
                 }
+                
+                &__msg {
+                    right: -10px; 
+                    top: 30px;
+                    width: 100%;
+                    
+                }
+            }
+            
+            &--msg {
+                padding: 0;
+                 margin: 0px 10px 0px 28px;
             }
         }
         
@@ -413,7 +533,17 @@
                     float: right;
                     margin-right: 10px;
                      cursor: default;
+                    
                 }
+                
+            }
+             &--title {
+                color: $mainLightGreen;
+            }
+                
+            &--name {
+                  margin-left: 5px;
+                  font-weight: 600;    
             }
         }
     }
@@ -429,11 +559,11 @@
         &__wrapper {
             position: absolute;   
             background-color: #fff;
-            top: 13%;
-            transform: translateY(-13%);  
+            top: 25%;
+            transform: translateY(-25%);  
             left: 50%;
             transform: translateX(-50%);
-            width: 60%; 
+            width: 90%;    
             padding: 0 20px;
             max-height: 400px;   
             overflow: hidden;
@@ -444,6 +574,14 @@
             border-top: 10px solid rgba($mainDarkBlack, .6);  
             border-bottom: 10px solid rgba($mainDarkBlack, .6);    
             z-index: 2;
+              
+            @mixin atSmall {
+                width: 80%;
+            }
+            
+            @mixin atMedium {
+                width: 60%;
+            }
         }
         
         &__form {
@@ -532,11 +670,11 @@
     &--status {
             position: absolute;   
             background-color: #fff;
-            top: 13%;
-            transform: translateY(-13%);  
+            top: 25%; 
+            transform: translateY(-25%);  
             left: 50%;
             transform: translateX(-50%);
-            width: 60%; 
+            width: 95%; 
             padding: 0 20px;
             max-height: 400px;   
             overflow: hidden;
@@ -654,7 +792,7 @@
                     &__last {
                         position: absolute;
                         right: 0%;
-                        top: -10px !important; 
+                        top: -8px !important; 
                         
                         &--appvd {
                             background-color: $mainLightGreen; 
@@ -686,7 +824,15 @@
             opacity: 1;
             visibility: visible;
             z-index: 2;
-            transition: all .3s ease-out;
+            transition: all .3s ease-in;
         }
+        
+            @mixin atSmall {
+                width: 80%;
+            }
+            
+            @mixin atMedium {
+                width: 60%;
+            }
     }
 }

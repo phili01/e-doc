@@ -1,0 +1,115 @@
+.site-main__dash {
+    width: 100%;
+    @mixin clearfix;
+    margin-top: 40px;
+    
+    &--card {
+        position: relative;
+        border-radius: 5px;
+        padding: 0 20px;
+        margin-bottom: 50px;
+        
+        &__item {
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 10px 0 10px 10px;
+            @mixin clearfix;
+            
+            & > li {
+                float: left; 
+                
+                &:last-child {
+                    float: right;
+                }
+            }
+            
+            &--no {
+                font-size: 2.5rem;
+                position: absolute;
+                right: 10px; 
+            } 
+            
+            &--opt {
+                position: absolute;
+                bottom: 6px; 
+                right: 10px; 
+                font-size: .9375rem; 
+            }
+            
+            &--acc {
+                 background-color: $mainLightGreen;
+            }
+            
+            &--rej {
+                 background-color: #e51919; 
+            }
+            
+            &--proc {
+                 background-color: $mainLightBlue; 
+            } 
+        }
+        
+        &__footer {
+            background-color: rgba($mainDarkGray, .2); 
+            width: 100%;
+            padding: 10px 10px; 
+            font-size: .9375rem;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;   
+            color: $mainFontColor;
+            cursor: pointer;
+            
+            &--acc {
+                color: rgba($mainLightGreen, .7);
+                
+                &:hover {
+                    color: rgba($mainLightGreen, 1);
+                }
+            }
+            
+            &--rej {
+                color: rgba($mainLightRed, .7);
+                
+                &:hover {
+                    color: rgba($mainLightRed, 1);
+                }
+            }
+            
+            &--proc { 
+                color: rgba($mainLightBlue, .7);
+                
+                 &:hover {
+                    color: rgba($mainLightBlue, 1);
+                }
+            }
+        }
+        
+        &__acc {
+            border: 1px solid $mainLightGreen; 
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        &__rej {
+            border: 1px solid $mainLightRed; 
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        &__proc {
+            border: 1px solid $mainLightBlue; 
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        @mixin atSmall {
+             width: 100%;  
+        }
+        
+        @mixin atMedium {
+            width: 33.333%;
+            float: left;
+        }
+    }
+}

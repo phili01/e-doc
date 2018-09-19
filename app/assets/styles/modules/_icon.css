@@ -34,7 +34,11 @@
     
     &__site-header--arrow {
         position: absolute;
-        right: 0;
+        right: 0; 
+        
+        @mixin atMedium {
+            right: -16px; 
+        }
     }
     
     &__site-main--pen {
@@ -90,9 +94,19 @@
     &__mymemo--filter__search {
         position: absolute;
         top: 13px;
-        left: 74%;
-        transform: translateX(-74%);
-        color: $mainDarkGray;  
+        left: 90%;
+        transform: translateX(-90%);
+        color: $mainDarkGray;
+        
+        @mixin atSmall {
+            left: 82%; 
+            transform: translateX(-82%);
+        }
+        
+        @mixin atMedium {
+            left: 72%;
+            transform: translateX(-72%);
+        }
     }
     
     &__mymemo--filter__arrow {
@@ -165,7 +179,19 @@
         transform: translateY(-50%); 
     }
     
+    &__mymemo--icn {
+        margin-right: 5px;
+    }
+    
     &__view--icn {
         margin-right: 5px;
+    }
+    
+    &__dash--icn {
+        font-size: 4.375rem;     
+    }
+    
+    &__dash--footer__icn {
+        float: right; 
     }
 }

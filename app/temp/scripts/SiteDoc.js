@@ -10460,8 +10460,8 @@
 	        this.filterIcn = (0, _jquery2.default)(".site-main__mymemo--msg__maintitle--filter");
 	        this.fwdToggler = (0, _jquery2.default)(".site-main__mymemo--msg__btn--share, .site-main__mymemo--msg__title--icon__share");
 	        this.fwd = (0, _jquery2.default)(".site-main__mymemo--fwd");
-	        this.overlayClose = (0, _jquery2.default)(".site-main__content--overlay, .site-main__mymemo--fwd__user, .site-main__mymemo--status__details--item__last");
-	        this.overlay = (0, _jquery2.default)(".site-main__content--overlay");
+	        this.overlayClose = (0, _jquery2.default)(".page-section__pst--overlayblk, .site-main__mymemo--fwd__user, .site-main__mymemo--status__details--item__last");
+	        this.overlay = (0, _jquery2.default)(".page-section__pst--overlayblk");
 	        this.progressToggler = (0, _jquery2.default)(".site-main__mymemo--msg__footer--memo");
 	        this.progress = (0, _jquery2.default)(".site-main__mymemo--status");
 	        this.events();
@@ -10482,7 +10482,7 @@
 	        key: "toggleFwd",
 	        value: function toggleFwd() {
 	            this.fwd.toggleClass("site-main__mymemo--fwd__visible");
-	            this.overlay.toggleClass("site-main__content--overlay__visible");
+	            this.overlay.toggleClass("page-section__pst--overlayblk__visible");
 	        }
 	    }, {
 	        key: "toggleFilter",
@@ -10514,14 +10514,14 @@
 	        key: "toggleProgress",
 	        value: function toggleProgress() {
 	            this.progress.toggleClass("site-main__mymemo--status__visible");
-	            this.overlay.toggleClass("site-main__content--overlay__visible");
+	            this.overlay.toggleClass("page-section__pst--overlayblk__visible");
 	        }
 	    }, {
 	        key: "removeOverlay",
 	        value: function removeOverlay() {
 	            this.fwd.removeClass("site-main__mymemo--fwd__visible");
 	            this.progress.removeClass("site-main__mymemo--status__visible");
-	            this.overlay.removeClass("site-main__content--overlay__visible");
+	            this.overlay.removeClass("page-section__pst--overlayblk__visible");
 	        }
 	    }]);
 
