@@ -86,6 +86,11 @@
 	        this.user = (0, _jquery2.default)(".site-header__content--account__details--name__settings");
 	        this.userToggler = (0, _jquery2.default)(".site-header__content--account__details--name, .site-header__content--account__details--img");
 	        this.userTogglerIcn = (0, _jquery2.default)(".site-header__content--account__details--name h4");
+	        this.navToggler = (0, _jquery2.default)(".site-header__content--nav");
+	        this.nav = (0, _jquery2.default)(".site-main__nav");
+	        this.navOverLay = (0, _jquery2.default)(".wrapper__main--overlay");
+	        this.navTopSm = (0, _jquery2.default)(".site-header__logo--sm");
+	        this.navClose = (0, _jquery2.default)(".wrapper__main--overlay");
 	        this.events();
 	    }
 
@@ -93,12 +98,28 @@
 	        key: "events",
 	        value: function events() {
 	            this.userToggler.click(this.toggleUserDet.bind(this));
+	            this.navToggler.click(this.openNav.bind(this));
+	            this.navClose.click(this.closeNav.bind(this));
 	        }
 	    }, {
 	        key: "toggleUserDet",
 	        value: function toggleUserDet() {
 	            this.user.toggleClass("site-header__content--account__details--name__settings--visible");
 	            this.userTogglerIcn.toggleClass("icon__rotate");
+	        }
+	    }, {
+	        key: "openNav",
+	        value: function openNav() {
+	            this.nav.addClass("site-main__nav--visible");
+	            this.navTopSm.addClass("site-header__logo--sm__hide");
+	            this.navOverLay.addClass("wrapper__main--overlay__visible");
+	        }
+	    }, {
+	        key: "closeNav",
+	        value: function closeNav() {
+	            this.nav.removeClass("site-main__nav--visible");
+	            this.navTopSm.removeClass("site-header__logo--sm__hide");
+	            this.navOverLay.removeClass("wrapper__main--overlay__visible");
 	        }
 	    }]);
 

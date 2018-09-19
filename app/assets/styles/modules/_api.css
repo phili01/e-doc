@@ -1,0 +1,19 @@
+.api {
+    width: 500px; 
+    height: 200px;
+    left: -25px;    
+    position: relative;  
+            
+    @mixin atSmall {
+        left: -80px;  
+        position: relative; 
+        width: 800px;  
+        height: 500px ;
+    }
+    
+    @mixin atMedium {
+        width: 900px !important; 
+        height: 500px !important;
+        left: auto;   
+    }
+}

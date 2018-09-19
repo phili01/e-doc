@@ -23,6 +23,14 @@ gulp.task('watch', function(){
 		gulp.start('viewmemoInject')     
 	});
     
+    watch('./app/assets/styles/**/*.css', function(){
+		gulp.start('dashInject')     
+	});
+    
+    watch('./app/assets/styles/**/*.css', function(){
+		gulp.start('signInject')     
+	});
+    
     watch('./app/assets/scripts/**/*.js', function() {
         gulp.start('scriptsRefresh');
     });
@@ -36,6 +44,16 @@ gulp.task('cssInject',['styles'],function(){
 
 gulp.task('viewmemoInject',['viewmemo'],function(){
 	return gulp.src("./app/temp/styles/viewmemo.css")
+	.pipe(browserSync.stream());
+});
+
+gulp.task('dashInject',['memodash'],function(){
+	return gulp.src("./app/temp/styles/dash.css")
+	.pipe(browserSync.stream());
+});
+ 
+gulp.task('signInject',['memosign'],function(){
+	return gulp.src("./app/temp/styles/sign.css")
 	.pipe(browserSync.stream());
 });
 

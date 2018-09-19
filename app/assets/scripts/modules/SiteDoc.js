@@ -12,8 +12,8 @@ class SiteDoc {
         this.filterIcn = $(".site-main__mymemo--msg__maintitle--filter");
         this.fwdToggler = $(".site-main__mymemo--msg__btn--share, .site-main__mymemo--msg__title--icon__share");
         this.fwd = $(".site-main__mymemo--fwd"); 
-        this.overlayClose = $(".site-main__content--overlay, .site-main__mymemo--fwd__user, .site-main__mymemo--status__details--item__last");
-        this.overlay = $(".site-main__content--overlay");
+        this.overlayClose = $(".page-section__pst--overlayblk, .site-main__mymemo--fwd__user, .site-main__mymemo--status__details--item__last");
+        this.overlay = $(".page-section__pst--overlayblk");
         this.progressToggler  = $(".site-main__mymemo--msg__footer--memo");
         this.progress = $(".site-main__mymemo--status");
         this.events();
@@ -31,7 +31,7 @@ class SiteDoc {
    
     toggleFwd() {
         this.fwd.toggleClass("site-main__mymemo--fwd__visible");
-        this.overlay.toggleClass("site-main__content--overlay__visible");
+        this.overlay.toggleClass("page-section__pst--overlayblk__visible");
     }
     
     toggleFilter() {
@@ -59,13 +59,13 @@ class SiteDoc {
     
     toggleProgress() { 
         this.progress.toggleClass("site-main__mymemo--status__visible"); 
-        this.overlay.toggleClass("site-main__content--overlay__visible");
+        this.overlay.toggleClass("page-section__pst--overlayblk__visible");
     }
     
     removeOverlay() {
         this.fwd.removeClass("site-main__mymemo--fwd__visible"); 
         this.progress.removeClass("site-main__mymemo--status__visible");
-        this.overlay.removeClass("site-main__content--overlay__visible");
+        this.overlay.removeClass("page-section__pst--overlayblk__visible");
     }
 }
 
