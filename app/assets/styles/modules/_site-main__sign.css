@@ -1,0 +1,161 @@
+.site-main__sign {
+    background-color: #fff;   
+    width: 100%;     
+    
+    &--bg {
+        background: 10px 10px url("../../../assets/images/form_bg.png") repeat; 
+        background-color: rgba($mainDarkBlack, .1);  
+        width: 100%; 
+        background-attachment: fixed; 
+/*        margin-top: 20px; */
+        
+        &__vh {
+            height: 100vh; 
+        }
+    }
+    
+    &--header {
+        position: relative;
+/*        background-color: rgba($mainDarkGray, .1); */
+        padding: 25px 0;  
+        text-align: center;
+        font-size: 1rem;
+        margin: 0;
+        border-bottom: 2px solid $mainLightGreen;
+        overflow: hidden;
+        width: 100%;  
+        font-weight: 600;
+        
+        &__logo {
+            background: url("../../../assets/images/formlogo.jpg") no-repeat;
+            width: 66px;    
+            height: 70px; 
+            z-index: 0;
+            position: absolute;
+            top: 50%; 
+            transform: translateY(-50%); 
+            left: -28%;
+            background-size: contain; 
+            
+            @mixin atSmall {
+                left: -25%;
+            }
+        }
+        
+        & > span { 
+            position: relative;
+        }
+        
+        @mixin atSmall {
+            font-size: 1.25rem;
+        }
+    }
+    
+    &--title {
+        text-align: center;
+        background-color: $mainLightGreen; 
+        padding: 5px 0;
+        color: #fff;
+        width: 120px;
+        border-radius: 15px;
+        margin: 10px auto 0 auto; 
+        
+        &__login {
+            background-color: #fff;
+            color: $mainFontColor;
+            border: 1px solid $mainLightGreen;
+        }
+        
+        &__pass {
+            width: 200px; 
+            background-color: $mainLightGray;
+            color: $mainFontColor;
+        }
+    }
+    
+    &--subtitle {
+        text-align: center;   
+        width: 100%;  
+        font-size: .875rem;
+        margin-top: 10px;
+    }
+    
+    &--form {   
+        background-color: #fff;
+        max-width: 450px;
+        margin: 40px 25px 50px 25px;   
+        box-shadow: 0px 0px 22.08px 1.92px rgba(79, 79, 80, 0.4);
+        background: url("../../../assets/images/formlogo--fade.jpg") no-repeat center center;    
+        background-size: contain; 
+        padding: 20px;
+        font-size: .9375rem;
+        color: $mainFontColor;
+        position: relative;
+        padding-bottom: 70px;
+        
+        &__wrapper {
+            margin: 10px 0  10px 0;
+        } 
+        
+        &__lab {
+            display: block; 
+            padding-bottom: 10px;
+            font-weight: 600;
+            padding-top: 15px;
+        }
+        
+        &__group {
+            border-radius: 3px;
+            border: 1px solid rgba($mainDarkBlack, .4);
+            padding: 8px 10px;
+            width: 100%; 
+        }
+        
+        &__submit {
+            padding: 8px 30px; 
+            background-color: $mainLightGray;
+            color: $mainLightGreen;   
+            border: none;
+            border: 1px solid $mainDarkGreen; 
+            margin-top: 20px;
+            position: absolute;
+            right: 20px;
+            font-size: 1rem;  
+            border-radius: 3px; 
+            cursor: pointer;
+            font-weight: 300;
+            
+            &:hover {
+                background-color: $mainLightGreen;
+                color: #fff;
+            }
+            
+            @mixin atSmall {
+                font-size: 1.125rem; 
+            }
+        }
+        
+        @mixin atSmall { 
+            max-width: 480px;
+             margin: 40px auto 50px auto; 
+        }
+        
+        @mixin atMedium {
+             max-width: 600px;
+        }
+    }
+    
+    &--footer {
+        border-top: 2px solid $mainDarkGray; 
+        padding: 20px 0;
+        text-align: center;
+        background-color: $mainLightGreen; 
+        color: #fff; 
+        
+        &__pt {
+            position: absolute;
+            width: 100%;
+            bottom: 0;   
+        }
+    }
+}

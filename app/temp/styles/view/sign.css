@@ -358,7 +358,7 @@ img {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 .wrapper__header {
@@ -424,7 +424,199 @@ img {
                 transition: all .3s ease-in;
             }
 
+.wrapper--sign {
+       max-width: 1200px;   
+       background-color: rgba(255,255,255, 1);
+       box-shadow: 0px 4px 3.8px 1.2px rgba(0,0,0, 0.4);
+    }
+
+/*        */
+
+.wrapper--sign__vh {
+           height: 100vh;
+           position: relative;
+        }
+
 .site-main {
     position: relative;
     height: 100vh;
 }
+
+.site-main__sign {
+    background-color: #fff;   
+    width: 100%;
+}
+
+.site-main__sign--bg {
+        background: 10px 10px url("../../../assets/images/form_bg.png") repeat; 
+        background-color: rgba(0,0,0, .1);  
+        width: 100%; 
+        background-attachment: fixed;
+    }
+
+/*        margin-top: 20px; */
+
+.site-main__sign--bg__vh {
+            height: 100vh; 
+        }
+
+.site-main__sign--header {
+        position: relative;
+/*        background-color: rgba($mainDarkGray, .1); */
+        padding: 25px 0;  
+        text-align: center;
+        font-size: 1rem;
+        margin: 0;
+        border-bottom: 2px solid #599f2f;
+        overflow: hidden;
+        width: 100%;  
+        font-weight: 600;
+    }
+
+.site-main__sign--header__logo {
+            background: url("../../../assets/images/formlogo.jpg") no-repeat;
+            width: 66px;    
+            height: 70px; 
+            z-index: 0;
+            position: absolute;
+            top: 50%; 
+            -webkit-transform: translateY(-50%); 
+                    transform: translateY(-50%); 
+            left: -28%;
+            background-size: contain;
+        }
+
+@media (min-width: 530px) {
+
+.site-main__sign--header__logo {
+                left: -25%
+        }
+	}
+
+.site-main__sign--header > span { 
+            position: relative;
+        }
+
+@media (min-width: 530px) {
+
+.site-main__sign--header {
+            font-size: 1.25rem
+    }
+	}
+
+.site-main__sign--title {
+        text-align: center;
+        background-color: #599f2f; 
+        padding: 5px 0;
+        color: #fff;
+        width: 120px;
+        border-radius: 15px;
+        margin: 10px auto 0 auto;
+    }
+
+.site-main__sign--title__login {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #599f2f;
+        }
+
+.site-main__sign--title__pass {
+            width: 200px; 
+            background-color: #f2f6f8;
+            color: #333;
+        }
+
+.site-main__sign--subtitle {
+        text-align: center;   
+        width: 100%;  
+        font-size: .875rem;
+        margin-top: 10px;
+    }
+
+.site-main__sign--form {   
+        background-color: #fff;
+        max-width: 450px;
+        margin: 40px 25px 50px 25px;   
+        box-shadow: 0px 0px 22.08px 1.92px rgba(79, 79, 80, 0.4);
+        background: url("../../../assets/images/formlogo--fade.jpg") no-repeat center center;    
+        background-size: contain; 
+        padding: 20px;
+        font-size: .9375rem;
+        color: #333;
+        position: relative;
+        padding-bottom: 70px;
+    }
+
+.site-main__sign--form__wrapper {
+            margin: 10px 0  10px 0;
+        }
+
+.site-main__sign--form__lab {
+            display: block; 
+            padding-bottom: 10px;
+            font-weight: 600;
+            padding-top: 15px;
+        }
+
+.site-main__sign--form__group {
+            border-radius: 3px;
+            border: 1px solid rgba(0,0,0, .4);
+            padding: 8px 10px;
+            width: 100%; 
+        }
+
+.site-main__sign--form__submit {
+            padding: 8px 30px; 
+            background-color: #f2f6f8;
+            color: #599f2f;   
+            border: none;
+            border: 1px solid #3b6022; 
+            margin-top: 20px;
+            position: absolute;
+            right: 20px;
+            font-size: 1rem;  
+            border-radius: 3px; 
+            cursor: pointer;
+            font-weight: 300;
+        }
+
+.site-main__sign--form__submit:hover {
+                background-color: #599f2f;
+                color: #fff;
+            }
+
+@media (min-width: 530px) {
+
+.site-main__sign--form__submit {
+                font-size: 1.125rem
+        }
+	}
+
+@media (min-width: 530px) {
+
+.site-main__sign--form { 
+            max-width: 480px;
+             margin: 40px auto 50px auto
+    }
+	}
+
+@media (min-width: 800px) {
+
+.site-main__sign--form {
+             max-width: 600px
+    } 
+	}
+
+.site-main__sign--footer {
+        border-top: 2px solid #d2d2d2; 
+        padding: 20px 0;
+        text-align: center;
+        background-color: #599f2f; 
+        color: #fff;
+    }
+
+.site-main__sign--footer__pt {
+            position: absolute;
+            width: 100%;
+            bottom: 0;   
+        }
