@@ -122,8 +122,8 @@
                 width: 45%;
             }
         }
-        
-        &--notify {
+              
+.flexbox &--notify {
             position: absolute;
            left: 62%;
             transform: translateX(-62%);

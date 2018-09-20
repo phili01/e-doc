@@ -24,8 +24,8 @@
             border-bottom: none;
         }
     }
-    
-    &__main {
+     
+  .flexbox  &__main {
         height: 100vh;
         padding-top: 97px;
         position: relative;

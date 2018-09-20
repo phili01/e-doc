@@ -46,7 +46,7 @@
 
 	'use strict';
 
-	var _ViewDoc = __webpack_require__(5);
+	var _ViewDoc = __webpack_require__(7);
 
 	var _ViewDoc2 = _interopRequireDefault(_ViewDoc);
 
@@ -10428,7 +10428,9 @@
 /***/ },
 /* 3 */,
 /* 4 */,
-/* 5 */
+/* 5 */,
+/* 6 */,
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
