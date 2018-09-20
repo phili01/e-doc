@@ -358,7 +358,7 @@ img {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 .wrapper__header {
@@ -423,6 +423,19 @@ img {
                 visibility: visible;
                 transition: all .3s ease-in;
             }
+
+.wrapper--sign {
+       max-width: 1200px;   
+       background-color: rgba(255,255,255, 1);
+       box-shadow: 0px 4px 3.8px 1.2px rgba(0,0,0, 0.4);
+    }
+
+/*        */
+
+.wrapper--sign__vh {
+           height: 100vh;
+           position: relative;
+        }
 
 .row {
     display: block;
@@ -1260,10 +1273,6 @@ img {
         padding-bottom: 20px;
         border-bottom: 1px solid #599f2f;
         font-weight: 300;
-    }
-
-.site-main__content--overlay {
-       
     }
 
 .site-main__content--view {
