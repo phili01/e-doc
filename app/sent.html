@@ -64,23 +64,42 @@
            <div class="site-main">
                <div class="wrapper wrapper__main">
                    <div class="site-main__nav">
-                      <div class="site-main__nav--compose">
-                          <i class="fas fa-pen-alt icon icon__site-main--pen"></i>
-                          Compose
-                      </div>
+                     <div class="site-main__nav--logo">
+                          <picture>
+                           <img sizes="300px"
+                               srcset="assets/images/uniosunlogo--large.jpg 300w, assets/images/uniosunlogo--large-hi-dpi.jpg 600w" alt="uniosun logo">
+                           </picture>
+                           <div class="site-main__nav--logo__shade">
+
+                           </div>
+                        </div> 
+                      
+                      <a href="/compose.html"> 
+                         <div class="site-main__nav--compose">
+                              <i class="fas fa-pen-alt icon icon__site-main--pen"></i>
+                              Compose
+                          </div>
+                      </a>
                       <div class="site-main__nav--items__shade"></div>
                       <ul class="site-main__nav--items">
                           <li>
-                               <span><i class="fas fa-cog icon icon__site-main--item"></i></span>
-                               Dashboard
+                              <a href="/dash.html"> <span><i class="fas fa-tachometer-alt icon icon__site-main--item"></i></span>
+                               Dashboard</a> 
                             </li> 
                           <li class="site-main__nav--items__doc">
-                             <span><i class="far fa-file icon icon__site-main--item"></i></span> Memo
+                             <span><i class="far fa-file icon icon__site-main--item"></i></span> Document
                               <i class="fas fa-angle-down icon icon__site-main--item__angle"></i>
                               
-                              <ul class="site-main__nav--items__doc--opt">        
-                                  <li><i class="fas fa-paper-plane icon icon__site-main--plane"></i> Sent</li> 
-                                  <li><i class="far fa-paper-plane icon icon__site-main--plane icon__site-main--plane__rec"></i> Received</li>
+                              <ul class="site-main__nav--items__doc--opt">          <a href="/sent.html">
+                                  <li>
+                                      <i class="far fa-paper-plane icon icon__site-main--plane"></i> Sent
+                                  </li> 
+                                 </a>
+                                <a href="/receive.html">
+                                  <li>
+                                     <i class="fas fa-file"></i><i class="fas fa-arrow-left  icon icon__site-main--plane icon__site-main--plane__rec"></i>  Received
+                                  </li>
+                                 </a>
                               </ul>       
             
                           </li>
@@ -90,15 +109,23 @@
                               </span> Message
                               <i class="fas fa-angle-down icon icon__site-main--item__angle"></i>
                               
-                              <ul class="active__nav site-main__nav--items__msg--opt">        
-                                  <li><i class="fas fa-paper-plane icon icon__site-main--plane"></i> Sent</li> 
-                                  <li><i class="far fa-paper-plane icon icon__site-main--plane icon__site-main--plane__rec"></i> Received</li>
+                              <ul class="active__nav site-main__nav--items__msg--opt"> 
+                                 <a href="/msent">       
+                                  <li>
+                                      <i class="fas fa-paper-plane icon icon__site-main--plane"></i> Sent
+                                  </li>
+                                  </a>
+                                  <a href="/mreceive">  
+                                  <li>
+                                     <i class="fas fa-file"></i><i class="fas fa-arrow-left icon icon__site-main--plane icon__site-main--plane__rec"></i> Received
+                                  </li> 
+                                  </a>
                               </ul>
                               
                           </li>
-                          <li>
-                              <span><i class="far fa-trash-alt icon icon__site-main--item"></i></span>
-                              Trash
+                          <li> 
+                              <a href="/bin.html"><span><i class="far fa-trash-alt icon icon__site-main--item"></i></span>
+                              Trash</a>
                           </li>
                           <li>
                               <span>
@@ -115,7 +142,7 @@
                       </ul>
                       <div class="site-main__nav--ctadmin">
                           <i class="far fa-comment-alt icon icon__site-main--chat"></i> Chat Admin
-                      </div>
+                      </div> 
                       <div class="site-main__nav--shade"></div> 
                    </div>
                     <div class="site-main__content">
