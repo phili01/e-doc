@@ -386,7 +386,7 @@ img {
     }
 	}
 
-.wrapper__main {
+.flexbox  .wrapper__main {
         height: 100vh;
         padding-top: 97px;
         position: relative;
@@ -396,7 +396,7 @@ img {
         box-shadow: 1px 0px 2px 1px rgba(210,210,210, .9);
     }
 
-.wrapper__main--footer {
+.flexbox  .wrapper__main--footer {
             position: absolute;
             bottom: 0;
             height: 2px;
@@ -404,7 +404,7 @@ img {
             background-color: #599f2f;
         }
 
-.wrapper__main--overlay {
+.flexbox  .wrapper__main--overlay {
             position: absolute;
             top: 0;
             bottom: 0;
@@ -418,7 +418,7 @@ img {
             transition: all .3s ease-in; 
         }
 
-.wrapper__main--overlay__visible {
+.flexbox  .wrapper__main--overlay__visible {
                 opacity: 1;
                 visibility: visible;
                 transition: all .3s ease-in;
@@ -631,7 +631,7 @@ img {
         } 
 	}
 
-.site-header__content--notify {
+.flexbox .site-header__content--notify {
             position: absolute;
            left: 62%;
             -webkit-transform: translateX(-62%);
@@ -651,21 +651,21 @@ img {
             visibility: hidden;
         }
 
-.site-header__content--notify::after {
+.flexbox .site-header__content--notify::after {
 		content: "";
 		clear: both;
 		display: table;
 	}
 
-.site-header__content--notify li {
+.flexbox .site-header__content--notify li {
                 float: left;
             }
 
-.site-header__content--notify li:first-child {
+.flexbox .site-header__content--notify li:first-child {
                     border-right: 2px solid #d2d2d2;
                 }
 
-.site-header__content--notify li:last-child {
+.flexbox .site-header__content--notify li:last-child {
                     width: 100%;
                     position: absolute;
                     height: 2px;
@@ -676,7 +676,7 @@ img {
 
 @media (min-width: 530px) {
 
-.site-header__content--notify {
+.flexbox .site-header__content--notify {
                 left: 65%; 
                 -webkit-transform: translateX(-65%); 
                         transform: translateX(-65%);  
@@ -686,7 +686,7 @@ img {
 
 @media (min-width: 800px) {
 
-.site-header__content--notify {
+.flexbox .site-header__content--notify {
                 left: 68%;
                 -webkit-transform: translateX(-68%);
                         transform: translateX(-68%);  
@@ -698,7 +698,7 @@ img {
 
 @media (min-width: 1010px) {
 
-.site-header__content--notify {
+.flexbox .site-header__content--notify {
                 left: 72%;
                 -webkit-transform: translateX(-72%);
                         transform: translateX(-72%)
@@ -1066,7 +1066,7 @@ img {
     top: 0;
     width: 300px;
     left: 0;
-    bottom: 0;
+    bottom: 0; 
     padding-top: 97px; 
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 0px 4px 2px rgba(210,210,210, .9);
@@ -1143,6 +1143,11 @@ img {
         cursor: pointer;
         border-radius: 5px;
         font-weight: 300;
+    }
+
+.site-main__nav a {
+        text-decoration: none;
+        color: rgba(0,0,0, .6);
     }
 
 .site-main__nav--items {
@@ -1255,7 +1260,7 @@ img {
 }
 	}
 
-.site-main__content {
+.flexbox .site-main__content {
 /*    background-color: $bgHeader; */
     width: 100%;
     margin-left: 0; 
@@ -1266,7 +1271,7 @@ img {
     
 }
 
-.site-main__content--header {
+.flexbox .site-main__content--header {
         text-align: center;
         font-size: 1.25rem;
         color: #333;
@@ -1275,13 +1280,13 @@ img {
         font-weight: 300;
     }
 
-.site-main__content--view {
+.flexbox .site-main__content--view {
         background-color: rgba(0,0,0, .8); 
     }
 
 @media (min-width: 1010px) {
 
-.site-main__content {
+.flexbox .site-main__content {
         margin-left: 300px
     
 }
@@ -1468,7 +1473,7 @@ img {
                 padding: 25px 0 25px 0;    
             }
 
-.site-main__mymemo--msg__maintitle--overlay {
+.flexbox  .site-main__mymemo--msg__maintitle--overlay {
                 width: 100%; 
                 display: block; 
                 padding: 0px 0;  
@@ -1480,11 +1485,11 @@ img {
                 align-items: center;
             }
 
-.site-main__mymemo--msg__maintitle--overlay--gy {  
+.flexbox  .site-main__mymemo--msg__maintitle--overlay--gy {  
                    background-color: rgba(0,0,0, .5); 
                 }
 
-.site-main__mymemo--msg__maintitle--overlay__grn {
+.flexbox  .site-main__mymemo--msg__maintitle--overlay__grn {
                      background-color: rgba(89,159,47, .7);   
                 }
 
@@ -1721,7 +1726,7 @@ img {
                    margin: 0 120px 0 0; 
                 }
 
-.site-main__mymemo--msg__title--icon {       
+.flexbox  .site-main__mymemo--msg__title--icon {       
                 position: absolute;
                 right: -10px; 
                 top: -3px;
@@ -1734,7 +1739,7 @@ img {
                 z-index: 1;
 */
 
-.site-main__mymemo--msg__title--icon > div {
+.flexbox  .site-main__mymemo--msg__title--icon > div {
                     position: absolute; 
                     width: 25px;
                     height: 25px;
@@ -1745,29 +1750,29 @@ img {
                     align-items: center;
                 }
 
-.site-main__mymemo--msg__title--icon__edit {
+.flexbox  .site-main__mymemo--msg__title--icon__edit {
                     right: 45px;
                     cursor: pointer;
                 }
 
-.site-main__mymemo--msg__title--icon__share {
+.flexbox  .site-main__mymemo--msg__title--icon__share {
                     right: 85px;   
                     cursor: pointer;
                 }
 
-.site-main__mymemo--msg__title--icon__del {
+.flexbox  .site-main__mymemo--msg__title--icon__del {
                     right: 10px;
                     cursor: pointer;
                 }
 
-.site-main__mymemo--msg__title--icon__visible {
+.flexbox  .site-main__mymemo--msg__title--icon__visible {
                     opacity: 1;
                     visibility: visible;
                     z-index: 1;
                     transition: all .3s ease-in;
                 }
 
-.site-main__mymemo--msg__title--icon__msg {
+.flexbox  .site-main__mymemo--msg__title--icon__msg {
                     right: -10px; 
                     top: 30px;
                     width: 100%;
@@ -2204,7 +2209,7 @@ img {
     padding: 10px 20px 10px 20px;
 }
 
-.page-section__pst {
+.flexbox .page-section__pst {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -2214,11 +2219,11 @@ img {
         
     }
 
-.page-section__pst--abst {
+.flexbox .page-section__pst--abst {
             position: relative;
         }
 
-.page-section__pst--overlay {
+.flexbox .page-section__pst--overlay {
             background-color: rgba(60,160,207, .2);
             position: absolute; 
             top: -8px;
@@ -2229,7 +2234,7 @@ img {
             opacity: 1;  
         }
 
-.page-section__pst--overlayblk {
+.flexbox .page-section__pst--overlayblk {
             position: absolute; 
             top: 0; 
             left: -50px;
@@ -2241,7 +2246,7 @@ img {
             visibility: hidden;
         }
 
-.page-section__pst--overlayblk__visible { 
+.flexbox .page-section__pst--overlayblk__visible { 
                 opacity: 1; 
                 bottom: -110px;
                 display: flex;

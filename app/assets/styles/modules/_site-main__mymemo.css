@@ -128,7 +128,7 @@
             display: none;   
         }
         
-    }
+    } 
     
     
     &--msg {
@@ -156,7 +156,7 @@
                 padding: 25px 0 25px 0;    
             }
             
-            &--overlay {
+    .flexbox  &--overlay {
                 width: 100%; 
                 display: block; 
                 padding: 0px 0;  
@@ -397,7 +397,7 @@
                 }
             }
             
-            &--icon {       
+    .flexbox  &--icon {       
                 position: absolute;
                 right: -10px; 
                 top: -3px;
